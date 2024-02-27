@@ -1,0 +1,45 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.13",
+    "heartbeatAt": "2024-02-09T10:14:43.232013",
+    "startedAt": "2024-02-09T10:14:42.481582",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/mukhtar-algezoli/Arabic_SER.git",
+        "commit": "ae45a3a8aeb029206bced98a189c7caa7b0c7e10"
+    },
+    "email": "mukhtaralgezoli@gmail.com",
+    "root": "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER",
+    "host": "Mukhtars-MBP.mbzu.ae",
+    "username": "mukh",
+    "executable": "/Users/mukh/opt/anaconda3/bin/python3",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 152.38034057617188
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

@@ -1,0 +1,185 @@
+2024-02-21 11:25:34,362 INFO    StreamThr :92635 [internal.py:wandb_internal():86] W&B internal server running at pid: 92635, started at: 2024-02-21 11:25:34.361647
+2024-02-21 11:25:34,363 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: status
+2024-02-21 11:25:34,368 INFO    WriterThread:92635 [datastore.py:open_for_write():87] open: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/run-nqpc8yja.wandb
+2024-02-21 11:25:34,368 DEBUG   SenderThread:92635 [sender.py:send():382] send: header
+2024-02-21 11:25:34,369 DEBUG   SenderThread:92635 [sender.py:send():382] send: run
+2024-02-21 11:25:35,055 INFO    SenderThread:92635 [dir_watcher.py:__init__():211] watching files in: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files
+2024-02-21 11:25:35,056 INFO    SenderThread:92635 [sender.py:_start_run_threads():1136] run started: nqpc8yja with start time 1708500334.362308
+2024-02-21 11:25:35,073 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: check_version
+2024-02-21 11:25:35,073 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: check_version
+2024-02-21 11:25:35,150 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: run_start
+2024-02-21 11:25:35,174 DEBUG   HandlerThread:92635 [system_info.py:__init__():27] System info init
+2024-02-21 11:25:35,175 DEBUG   HandlerThread:92635 [system_info.py:__init__():42] System info init done
+2024-02-21 11:25:35,175 INFO    HandlerThread:92635 [system_monitor.py:start():194] Starting system monitor
+2024-02-21 11:25:35,175 INFO    SystemMonitor:92635 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-21 11:25:35,175 INFO    HandlerThread:92635 [system_monitor.py:probe():214] Collecting system info
+2024-02-21 11:25:35,176 INFO    SystemMonitor:92635 [interfaces.py:start():190] Started cpu monitoring
+2024-02-21 11:25:35,176 DEBUG   HandlerThread:92635 [system_info.py:probe():151] Probing system
+2024-02-21 11:25:35,176 INFO    SystemMonitor:92635 [interfaces.py:start():190] Started disk monitoring
+2024-02-21 11:25:35,178 INFO    SystemMonitor:92635 [interfaces.py:start():190] Started memory monitoring
+2024-02-21 11:25:35,179 INFO    SystemMonitor:92635 [interfaces.py:start():190] Started network monitoring
+2024-02-21 11:25:35,191 DEBUG   HandlerThread:92635 [gitlib.py:_init_repo():56] git repository is invalid
+2024-02-21 11:25:35,191 DEBUG   HandlerThread:92635 [system_info.py:probe():199] Probing system done
+2024-02-21 11:25:35,191 DEBUG   HandlerThread:92635 [system_monitor.py:probe():223] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.9.13', 'heartbeatAt': '2024-02-21T07:25:35.176765', 'startedAt': '2024-02-21T07:25:34.353512', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'Mukhtars-MBP.mbzu.ae', 'username': 'mukh', 'executable': '/Users/mukh/opt/anaconda3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 460.4317207336426, 'used': 327.6777572631836}}, 'memory': {'total': 16.0}}
+2024-02-21 11:25:35,191 INFO    HandlerThread:92635 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-21 11:25:35,191 INFO    HandlerThread:92635 [system_monitor.py:probe():227] Publishing system info
+2024-02-21 11:25:35,191 DEBUG   HandlerThread:92635 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-21 11:25:36,062 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/conda-environment.yaml
+2024-02-21 11:25:40,647 DEBUG   HandlerThread:92635 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-21 11:25:40,648 INFO    HandlerThread:92635 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-21 11:25:40,650 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: status_report
+2024-02-21 11:25:40,650 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-21 11:25:40,650 DEBUG   SenderThread:92635 [sender.py:send():382] send: files
+2024-02-21 11:25:40,650 INFO    SenderThread:92635 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-21 11:25:40,654 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-21 11:25:40,654 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: python_packages
+2024-02-21 11:25:40,655 DEBUG   SenderThread:92635 [sender.py:send():382] send: telemetry
+2024-02-21 11:25:40,656 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-21 11:25:40,656 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: stop_status
+2024-02-21 11:25:40,657 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-21 11:25:41,088 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/conda-environment.yaml
+2024-02-21 11:25:41,089 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/wandb-metadata.json
+2024-02-21 11:25:41,089 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/requirements.txt
+2024-02-21 11:25:41,650 INFO    wandb-upload_0:92635 [upload_job.py:push():131] Uploaded file /var/folders/qn/2bt_02n91d13y82npwc98ynw0000gn/T/tmppmovsn1rwandb/cj867ok8-wandb-metadata.json
+2024-02-21 11:25:42,091 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/output.log
+2024-02-21 11:25:44,102 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/output.log
+2024-02-21 11:25:45,399 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: status_report
+2024-02-21 11:25:46,786 DEBUG   SenderThread:92635 [sender.py:send():382] send: exit
+2024-02-21 11:25:46,787 INFO    SenderThread:92635 [sender.py:send_exit():589] handling exit code: 1
+2024-02-21 11:25:46,787 INFO    SenderThread:92635 [sender.py:send_exit():591] handling runtime: 11
+2024-02-21 11:25:46,787 INFO    SenderThread:92635 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-21 11:25:46,787 INFO    SenderThread:92635 [sender.py:send_exit():597] send defer
+2024-02-21 11:25:46,788 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:46,788 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-21 11:25:46,788 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:46,788 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-21 11:25:46,788 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 1
+2024-02-21 11:25:46,788 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:46,788 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-21 11:25:46,788 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:46,788 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-21 11:25:46,788 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 2
+2024-02-21 11:25:46,788 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:46,788 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-21 11:25:46,788 INFO    HandlerThread:92635 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-21 11:25:46,788 INFO    HandlerThread:92635 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-21 11:25:46,788 DEBUG   SystemMonitor:92635 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-21 11:25:46,788 INFO    HandlerThread:92635 [interfaces.py:finish():202] Joined disk monitor
+2024-02-21 11:25:46,789 DEBUG   SystemMonitor:92635 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-21 11:25:46,789 INFO    HandlerThread:92635 [interfaces.py:finish():202] Joined memory monitor
+2024-02-21 11:25:46,789 DEBUG   SystemMonitor:92635 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-21 11:25:46,789 INFO    HandlerThread:92635 [interfaces.py:finish():202] Joined network monitor
+2024-02-21 11:25:46,790 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:46,790 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-21 11:25:46,790 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 3
+2024-02-21 11:25:46,790 DEBUG   SenderThread:92635 [sender.py:send():382] send: stats
+2024-02-21 11:25:46,790 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:46,790 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-21 11:25:46,790 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:46,790 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-21 11:25:46,790 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 4
+2024-02-21 11:25:46,790 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:46,790 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-21 11:25:46,790 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:46,790 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-21 11:25:46,790 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 5
+2024-02-21 11:25:46,791 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:46,791 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-21 11:25:46,791 DEBUG   SenderThread:92635 [sender.py:send():382] send: summary
+2024-02-21 11:25:46,791 INFO    SenderThread:92635 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-21 11:25:46,791 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:46,791 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-21 11:25:46,791 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 6
+2024-02-21 11:25:46,791 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:46,791 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-21 11:25:46,791 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:46,791 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-21 11:25:46,794 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: status_report
+2024-02-21 11:25:47,077 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 7
+2024-02-21 11:25:47,077 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:47,077 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-21 11:25:47,078 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:47,078 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-21 11:25:47,113 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/config.yaml
+2024-02-21 11:25:47,113 INFO    Thread-13 :92635 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/wandb-summary.json
+2024-02-21 11:25:47,789 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 11:25:48,804 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 8
+2024-02-21 11:25:48,804 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 11:25:48,804 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:48,804 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-21 11:25:48,805 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:48,805 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-21 11:25:48,805 INFO    SenderThread:92635 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-21 11:25:48,806 INFO    SenderThread:92635 [job_builder.py:_get_source_type():437] no source found
+2024-02-21 11:25:48,806 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 9
+2024-02-21 11:25:48,806 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:48,806 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-21 11:25:48,806 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:48,807 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-21 11:25:48,807 INFO    SenderThread:92635 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-21 11:25:49,120 INFO    SenderThread:92635 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/output.log
+2024-02-21 11:25:49,122 INFO    SenderThread:92635 [dir_watcher.py:finish():388] scan: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files
+2024-02-21 11:25:49,122 INFO    SenderThread:92635 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/requirements.txt requirements.txt
+2024-02-21 11:25:49,122 INFO    SenderThread:92635 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/output.log output.log
+2024-02-21 11:25:49,127 INFO    SenderThread:92635 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/config.yaml config.yaml
+2024-02-21 11:25:49,128 INFO    SenderThread:92635 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/wandb-summary.json wandb-summary.json
+2024-02-21 11:25:49,133 INFO    SenderThread:92635 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/conda-environment.yaml conda-environment.yaml
+2024-02-21 11:25:49,136 INFO    SenderThread:92635 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/wandb-metadata.json wandb-metadata.json
+2024-02-21 11:25:49,136 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 10
+2024-02-21 11:25:49,137 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:49,139 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-21 11:25:49,140 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:49,140 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-21 11:25:49,140 INFO    SenderThread:92635 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-21 11:25:49,709 INFO    wandb-upload_0:92635 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/requirements.txt
+2024-02-21 11:25:49,809 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 11:25:49,809 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 11:25:49,856 INFO    wandb-upload_2:92635 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/config.yaml
+2024-02-21 11:25:49,900 INFO    wandb-upload_3:92635 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/wandb-summary.json
+2024-02-21 11:25:49,913 INFO    wandb-upload_4:92635 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/conda-environment.yaml
+2024-02-21 11:25:49,931 INFO    wandb-upload_1:92635 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/files/output.log
+2024-02-21 11:25:50,137 INFO    Thread-12 :92635 [sender.py:transition_state():617] send defer: 11
+2024-02-21 11:25:50,138 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:50,138 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-21 11:25:50,139 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:50,139 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-21 11:25:50,139 INFO    SenderThread:92635 [file_pusher.py:join():181] waiting for file pusher
+2024-02-21 11:25:50,139 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 12
+2024-02-21 11:25:50,139 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:50,139 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-21 11:25:50,140 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:50,140 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-21 11:25:50,140 INFO    SenderThread:92635 [file_stream.py:finish():595] file stream finish called
+2024-02-21 11:25:50,406 INFO    SenderThread:92635 [file_stream.py:finish():599] file stream finish is done
+2024-02-21 11:25:50,406 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 13
+2024-02-21 11:25:50,407 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:50,407 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-21 11:25:50,407 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:50,408 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-21 11:25:50,408 INFO    SenderThread:92635 [sender.py:transition_state():617] send defer: 14
+2024-02-21 11:25:50,408 DEBUG   SenderThread:92635 [sender.py:send():382] send: final
+2024-02-21 11:25:50,408 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 11:25:50,408 DEBUG   SenderThread:92635 [sender.py:send():382] send: footer
+2024-02-21 11:25:50,409 INFO    HandlerThread:92635 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-21 11:25:50,409 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: defer
+2024-02-21 11:25:50,409 INFO    SenderThread:92635 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-21 11:25:50,410 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 11:25:50,410 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 11:25:50,411 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 11:25:50,412 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 11:25:50,412 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: server_info
+2024-02-21 11:25:50,412 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-21 11:25:50,413 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: server_info
+2024-02-21 11:25:50,413 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-21 11:25:50,417 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-21 11:25:50,418 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: job_info
+2024-02-21 11:25:50,650 DEBUG   SenderThread:92635 [sender.py:send_request():409] send_request: job_info
+2024-02-21 11:25:50,651 INFO    MainThread:92635 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-02-21 11:25:50,651 INFO    MainThread:92635 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-02-21 11:25:50,651 INFO    MainThread:92635 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-02-21 11:25:50,651 DEBUG   HandlerThread:92635 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-21 11:25:50,651 INFO    HandlerThread:92635 [handler.py:finish():869] shutting down handler
+2024-02-21 11:25:51,423 INFO    WriterThread:92635 [datastore.py:close():296] close: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_112534-nqpc8yja/run-nqpc8yja.wandb
+2024-02-21 11:25:51,654 INFO    SenderThread:92635 [sender.py:finish():1572] shutting down sender
+2024-02-21 11:25:51,655 INFO    SenderThread:92635 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-21 11:25:51,655 INFO    SenderThread:92635 [file_pusher.py:join():181] waiting for file pusher

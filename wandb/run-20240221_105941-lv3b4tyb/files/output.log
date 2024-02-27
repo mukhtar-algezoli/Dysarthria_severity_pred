@@ -1,0 +1,28 @@
+Epoch 1
+-------------------------------
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 201, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 141, in main
+    train_model(args, model, train_dataloader, val_dataloader, optimizer, loss_fn, device, output_path = output_path, wandb=wandb)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/train/train.py", line 75, in train_model
+    train_loss, train_acc = train_loop(train_loader, model, loss_fn, optimizer, device, wandb)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/train/train.py", line 13, in train_loop
+    for batch, (batch_input, batch_labels) in enumerate(dataloader):
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/data/make_dataset.py", line 29, in __getitem__
+    speech, samplerate = sf.read(audio_path)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/soundfile.py", line 285, in read
+    with SoundFile(file, 'r', samplerate, channels,
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/soundfile.py", line 658, in __init__
+    self._file = self._open(file, mode_int, closefd)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/soundfile.py", line 1216, in _open
+    raise LibsndfileError(err, prefix="Error opening {0!r}: ".format(self.name))
+soundfile.LibsndfileError: Error opening '/UASpeech/audio/noisereduce/F05/F05_B1_LK_M6.wav': System error.

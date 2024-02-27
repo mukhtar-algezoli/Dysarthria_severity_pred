@@ -1,0 +1,26 @@
+
+./data/folds_metadata/KSUEmotions_fold4.csv
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER/main.py", line 191, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER/main.py", line 130, in main
+    train_set, test_set = get_train_test_set(args, 4)
+  File "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER/src/data/make_dataset.py", line 43, in get_train_test_set
+    train_set = KSUEMotionsDataset(train_folds, args.data_path, args.SSL_model)
+  File "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER/src/data/make_dataset.py", line 16, in __init__
+    self.metadata = pd.read_csv(ksu_emotions_metadata_path)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 678, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 932, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1216, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/common.py", line 658, in get_handle
+    if _is_binary_mode(path_or_buf, mode) and "b" not in mode:
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/common.py", line 1125, in _is_binary_mode
+    return isinstance(handle, _get_binary_io_classes()) or "b" in getattr(
+TypeError: argument of type 'method' is not iterable

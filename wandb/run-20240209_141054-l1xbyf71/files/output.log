@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER/main.py", line 191, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Emotion recognition/Arabic_SER/main.py", line 130, in main
+    train_set, test_set = get_train_test_set(args, args.data_path, args.SSL_model, 4)
+TypeError: get_train_test_set() takes from 1 to 2 positional arguments but 4 were given

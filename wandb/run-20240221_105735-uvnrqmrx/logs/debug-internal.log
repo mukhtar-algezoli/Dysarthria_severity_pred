@@ -1,0 +1,187 @@
+2024-02-21 10:57:35,056 INFO    StreamThr :86548 [internal.py:wandb_internal():86] W&B internal server running at pid: 86548, started at: 2024-02-21 10:57:35.055689
+2024-02-21 10:57:35,058 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: status
+2024-02-21 10:57:35,064 INFO    WriterThread:86548 [datastore.py:open_for_write():87] open: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/run-uvnrqmrx.wandb
+2024-02-21 10:57:35,064 DEBUG   SenderThread:86548 [sender.py:send():382] send: header
+2024-02-21 10:57:35,065 DEBUG   SenderThread:86548 [sender.py:send():382] send: run
+2024-02-21 10:57:35,658 INFO    SenderThread:86548 [dir_watcher.py:__init__():211] watching files in: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files
+2024-02-21 10:57:35,658 INFO    SenderThread:86548 [sender.py:_start_run_threads():1136] run started: uvnrqmrx with start time 1708498655.056853
+2024-02-21 10:57:35,664 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: check_version
+2024-02-21 10:57:35,664 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: check_version
+2024-02-21 10:57:35,722 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: run_start
+2024-02-21 10:57:35,737 DEBUG   HandlerThread:86548 [system_info.py:__init__():27] System info init
+2024-02-21 10:57:35,737 DEBUG   HandlerThread:86548 [system_info.py:__init__():42] System info init done
+2024-02-21 10:57:35,737 INFO    HandlerThread:86548 [system_monitor.py:start():194] Starting system monitor
+2024-02-21 10:57:35,738 INFO    SystemMonitor:86548 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-21 10:57:35,738 INFO    HandlerThread:86548 [system_monitor.py:probe():214] Collecting system info
+2024-02-21 10:57:35,738 DEBUG   HandlerThread:86548 [system_info.py:probe():151] Probing system
+2024-02-21 10:57:35,738 INFO    SystemMonitor:86548 [interfaces.py:start():190] Started cpu monitoring
+2024-02-21 10:57:35,740 INFO    SystemMonitor:86548 [interfaces.py:start():190] Started disk monitoring
+2024-02-21 10:57:35,740 INFO    SystemMonitor:86548 [interfaces.py:start():190] Started memory monitoring
+2024-02-21 10:57:35,741 INFO    SystemMonitor:86548 [interfaces.py:start():190] Started network monitoring
+2024-02-21 10:57:35,750 DEBUG   HandlerThread:86548 [gitlib.py:_init_repo():56] git repository is invalid
+2024-02-21 10:57:35,750 DEBUG   HandlerThread:86548 [system_info.py:probe():199] Probing system done
+2024-02-21 10:57:35,750 DEBUG   HandlerThread:86548 [system_monitor.py:probe():223] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.9.13', 'heartbeatAt': '2024-02-21T06:57:35.738992', 'startedAt': '2024-02-21T06:57:35.043135', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'Mukhtars-MBP.mbzu.ae', 'username': 'mukh', 'executable': '/Users/mukh/opt/anaconda3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 460.4317207336426, 'used': 236.6571044921875}}, 'memory': {'total': 16.0}}
+2024-02-21 10:57:35,750 INFO    HandlerThread:86548 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-21 10:57:35,750 INFO    HandlerThread:86548 [system_monitor.py:probe():227] Publishing system info
+2024-02-21 10:57:35,750 DEBUG   HandlerThread:86548 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-21 10:57:36,663 INFO    Thread-13 :86548 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/conda-environment.yaml
+2024-02-21 10:57:41,158 DEBUG   HandlerThread:86548 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-21 10:57:41,159 INFO    HandlerThread:86548 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-21 10:57:41,161 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: status_report
+2024-02-21 10:57:41,161 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-21 10:57:41,161 DEBUG   SenderThread:86548 [sender.py:send():382] send: files
+2024-02-21 10:57:41,161 INFO    SenderThread:86548 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-21 10:57:41,165 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-21 10:57:41,165 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: python_packages
+2024-02-21 10:57:41,167 DEBUG   SenderThread:86548 [sender.py:send():382] send: telemetry
+2024-02-21 10:57:41,167 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-21 10:57:41,167 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: stop_status
+2024-02-21 10:57:41,168 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-21 10:57:41,675 INFO    Thread-13 :86548 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/conda-environment.yaml
+2024-02-21 10:57:41,676 INFO    Thread-13 :86548 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/requirements.txt
+2024-02-21 10:57:41,676 INFO    Thread-13 :86548 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/wandb-metadata.json
+2024-02-21 10:57:41,871 DEBUG   SenderThread:86548 [sender.py:send():382] send: exit
+2024-02-21 10:57:41,871 INFO    SenderThread:86548 [sender.py:send_exit():589] handling exit code: 1
+2024-02-21 10:57:41,871 INFO    SenderThread:86548 [sender.py:send_exit():591] handling runtime: 6
+2024-02-21 10:57:41,872 INFO    SenderThread:86548 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-21 10:57:41,873 INFO    SenderThread:86548 [sender.py:send_exit():597] send defer
+2024-02-21 10:57:41,873 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:41,873 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-21 10:57:41,873 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:41,873 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-21 10:57:41,873 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 1
+2024-02-21 10:57:41,873 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:41,873 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-21 10:57:41,873 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:41,873 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-21 10:57:41,874 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 2
+2024-02-21 10:57:41,874 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:41,874 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-21 10:57:41,874 INFO    HandlerThread:86548 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-21 10:57:41,874 INFO    HandlerThread:86548 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-21 10:57:41,875 DEBUG   SystemMonitor:86548 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-21 10:57:41,875 INFO    HandlerThread:86548 [interfaces.py:finish():202] Joined disk monitor
+2024-02-21 10:57:41,875 DEBUG   SystemMonitor:86548 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-21 10:57:41,875 INFO    HandlerThread:86548 [interfaces.py:finish():202] Joined memory monitor
+2024-02-21 10:57:41,875 DEBUG   SystemMonitor:86548 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-21 10:57:41,876 INFO    HandlerThread:86548 [interfaces.py:finish():202] Joined network monitor
+2024-02-21 10:57:41,877 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:41,877 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-21 10:57:41,877 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 3
+2024-02-21 10:57:41,877 DEBUG   SenderThread:86548 [sender.py:send():382] send: stats
+2024-02-21 10:57:41,877 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:41,877 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-21 10:57:41,877 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:41,877 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-21 10:57:41,877 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 4
+2024-02-21 10:57:41,878 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:41,878 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-21 10:57:41,878 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:41,878 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-21 10:57:41,878 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 5
+2024-02-21 10:57:41,878 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:41,878 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-21 10:57:41,878 DEBUG   SenderThread:86548 [sender.py:send():382] send: summary
+2024-02-21 10:57:41,878 INFO    SenderThread:86548 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-21 10:57:41,879 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:41,879 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-21 10:57:41,879 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 6
+2024-02-21 10:57:41,879 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:41,879 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-21 10:57:41,879 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:41,879 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-21 10:57:41,883 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: status_report
+2024-02-21 10:57:42,124 INFO    wandb-upload_0:86548 [upload_job.py:push():131] Uploaded file /var/folders/qn/2bt_02n91d13y82npwc98ynw0000gn/T/tmpmognhgvdwandb/lukwwi9f-wandb-metadata.json
+2024-02-21 10:57:42,133 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 7
+2024-02-21 10:57:42,134 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:42,134 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-21 10:57:42,134 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:42,135 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-21 10:57:42,677 INFO    Thread-13 :86548 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/config.yaml
+2024-02-21 10:57:42,678 INFO    Thread-13 :86548 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/wandb-summary.json
+2024-02-21 10:57:42,679 INFO    Thread-13 :86548 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/output.log
+2024-02-21 10:57:42,876 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 10:57:43,872 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 8
+2024-02-21 10:57:43,872 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 10:57:43,872 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:43,872 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-21 10:57:43,872 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:43,872 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-21 10:57:43,872 INFO    SenderThread:86548 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-21 10:57:43,873 INFO    SenderThread:86548 [job_builder.py:_get_source_type():437] no source found
+2024-02-21 10:57:43,873 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 9
+2024-02-21 10:57:43,873 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:43,873 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-21 10:57:43,873 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:43,873 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-21 10:57:43,873 INFO    SenderThread:86548 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-21 10:57:43,879 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 10:57:44,684 INFO    SenderThread:86548 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/output.log
+2024-02-21 10:57:44,685 INFO    SenderThread:86548 [dir_watcher.py:finish():388] scan: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files
+2024-02-21 10:57:44,686 INFO    SenderThread:86548 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/requirements.txt requirements.txt
+2024-02-21 10:57:44,686 INFO    SenderThread:86548 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/output.log output.log
+2024-02-21 10:57:44,691 INFO    SenderThread:86548 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/config.yaml config.yaml
+2024-02-21 10:57:44,694 INFO    SenderThread:86548 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/wandb-summary.json wandb-summary.json
+2024-02-21 10:57:44,695 INFO    SenderThread:86548 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/conda-environment.yaml conda-environment.yaml
+2024-02-21 10:57:44,701 INFO    SenderThread:86548 [dir_watcher.py:finish():402] scan save: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/wandb-metadata.json wandb-metadata.json
+2024-02-21 10:57:44,701 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 10
+2024-02-21 10:57:44,702 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 10:57:44,702 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:44,705 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-21 10:57:44,705 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:44,705 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-21 10:57:44,705 INFO    SenderThread:86548 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-21 10:57:44,883 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 10:57:44,883 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 10:57:45,263 INFO    wandb-upload_0:86548 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/requirements.txt
+2024-02-21 10:57:45,413 INFO    wandb-upload_1:86548 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/output.log
+2024-02-21 10:57:45,432 INFO    wandb-upload_2:86548 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/config.yaml
+2024-02-21 10:57:45,458 INFO    wandb-upload_3:86548 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/wandb-summary.json
+2024-02-21 10:57:45,484 INFO    wandb-upload_4:86548 [upload_job.py:push():131] Uploaded file /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/files/conda-environment.yaml
+2024-02-21 10:57:45,688 INFO    Thread-12 :86548 [sender.py:transition_state():617] send defer: 11
+2024-02-21 10:57:45,689 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:45,689 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-21 10:57:45,690 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:45,690 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-21 10:57:45,690 INFO    SenderThread:86548 [file_pusher.py:join():181] waiting for file pusher
+2024-02-21 10:57:45,690 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 12
+2024-02-21 10:57:45,691 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:45,691 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-21 10:57:45,691 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:45,691 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-21 10:57:45,691 INFO    SenderThread:86548 [file_stream.py:finish():595] file stream finish called
+2024-02-21 10:57:45,886 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 10:57:46,008 INFO    SenderThread:86548 [file_stream.py:finish():599] file stream finish is done
+2024-02-21 10:57:46,008 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 13
+2024-02-21 10:57:46,008 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 10:57:46,008 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:46,009 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-21 10:57:46,009 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:46,009 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-21 10:57:46,009 INFO    SenderThread:86548 [sender.py:transition_state():617] send defer: 14
+2024-02-21 10:57:46,009 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: defer
+2024-02-21 10:57:46,009 INFO    HandlerThread:86548 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-21 10:57:46,010 DEBUG   SenderThread:86548 [sender.py:send():382] send: final
+2024-02-21 10:57:46,010 DEBUG   SenderThread:86548 [sender.py:send():382] send: footer
+2024-02-21 10:57:46,010 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: defer
+2024-02-21 10:57:46,010 INFO    SenderThread:86548 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-21 10:57:46,010 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 10:57:46,011 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 10:57:46,011 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-21 10:57:46,011 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: poll_exit
+2024-02-21 10:57:46,011 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: server_info
+2024-02-21 10:57:46,012 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: server_info
+2024-02-21 10:57:46,014 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-21 10:57:46,014 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-21 10:57:46,015 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-21 10:57:46,015 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: job_info
+2024-02-21 10:57:46,247 DEBUG   SenderThread:86548 [sender.py:send_request():409] send_request: job_info
+2024-02-21 10:57:46,247 INFO    MainThread:86548 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-02-21 10:57:46,247 INFO    MainThread:86548 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-02-21 10:57:46,247 INFO    MainThread:86548 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-02-21 10:57:46,247 DEBUG   HandlerThread:86548 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-21 10:57:46,247 INFO    HandlerThread:86548 [handler.py:finish():869] shutting down handler
+2024-02-21 10:57:47,020 INFO    WriterThread:86548 [datastore.py:close():296] close: /Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/wandb/run-20240221_105735-uvnrqmrx/run-uvnrqmrx.wandb
+2024-02-21 10:57:47,248 INFO    SenderThread:86548 [sender.py:finish():1572] shutting down sender
+2024-02-21 10:57:47,248 INFO    SenderThread:86548 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-21 10:57:47,248 INFO    SenderThread:86548 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 201, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 141, in main
+    train_model(args, model, train_dataloader, val_dataloader, optimizer, loss_fn, device, output_path, wandb=wandb)
+TypeError: train_model() got multiple values for argument 'wandb'

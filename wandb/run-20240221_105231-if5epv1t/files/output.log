@@ -1,0 +1,7 @@
+preprocessor_config.json: 100%|████████████████████████████████████████████████████████████████████████████████| 213/213 [00:00<00:00, 57.7kB/s]
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 201, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 141, in main
+    train_model(model, train_dataloader, val_dataloader, loss_fn, optimizer, args.epochs, args.batch_size, device, output_path, args.checkpoint_path, args.continue_training, wandb)
+TypeError: train_model() takes from 7 to 10 positional arguments but 12 were given

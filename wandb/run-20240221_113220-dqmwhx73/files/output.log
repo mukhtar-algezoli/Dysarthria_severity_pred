@@ -1,0 +1,38 @@
+Epoch 1
+-------------------------------
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 208, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 148, in main
+    train_model(args, model, train_dataloader, val_dataloader, optimizer, loss_fn, device, output_path = output_path, wandb=wandb)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/train/train.py", line 75, in train_model
+    train_loss, train_acc = train_loop(train_loader, model, loss_fn, optimizer, device, wandb)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/train/train.py", line 15, in train_loop
+    pred = model(batch_input.to(device))
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/models/model.py", line 53, in forward
+    output_features = self.SSLModel(x).last_hidden_state
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/transformers/models/hubert/modeling_hubert.py", line 1091, in forward
+    encoder_outputs = self.encoder(
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/transformers/models/hubert/modeling_hubert.py", line 738, in forward
+    layer_outputs = layer(
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/transformers/models/hubert/modeling_hubert.py", line 596, in forward
+    hidden_states = hidden_states + self.feed_forward(hidden_states)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/transformers/models/hubert/modeling_hubert.py", line 565, in forward
+    hidden_states = self.intermediate_dropout(hidden_states)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/torch/nn/functional.py", line 1252, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+KeyboardInterrupt

@@ -1,0 +1,41 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.13",
+    "heartbeatAt": "2024-02-21T07:28:17.938708",
+    "startedAt": "2024-02-21T07:28:17.148920",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--no_mps"
+    ],
+    "state": "running",
+    "program": "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "Mukhtars-MBP.mbzu.ae",
+    "username": "mukh",
+    "executable": "/Users/mukh/opt/anaconda3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 327.72241973876953
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

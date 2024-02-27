@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 201, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 139, in main
+    train_dataloader, test_dataloader, val_dataloader = get_train_test_val_set(args)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/data/make_dataset.py", line 43, in get_train_test_val_set
+    train_set = UASpeechDataset(os.path.join(args.data_splits_path, "train_df_4labels.csv"), args.data_path, args.SSL_model)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/data/make_dataset.py", line 19, in __init__
+    self.metadata = pd.read_csv(metadata_path)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 678, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 932, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1216, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/Users/mukh/opt/anaconda3/lib/python3.9/site-packages/pandas/io/common.py", line 786, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './data/folds_metadata/train_df_4labels.csv'

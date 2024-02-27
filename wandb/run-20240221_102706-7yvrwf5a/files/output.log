@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 201, in <module>
+    main()
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/main.py", line 139, in main
+    train_set, test_set = get_train_test_set(args, 4)
+  File "/Users/mukh/Desktop/Work/Dysarthria/Dysarthria_classification/src/data/make_dataset.py", line 37, in get_train_test_set
+    train = pd.read_csv(args.metadata_path + f'/KSUEmotions_fold{i}.csv')
+AttributeError: 'Namespace' object has no attribute 'metadata_path'
