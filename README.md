@@ -1,2 +1,2 @@
-Dysarthria Classification
+Dysarthria Severity Regression
 
