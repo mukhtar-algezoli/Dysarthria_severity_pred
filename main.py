@@ -30,8 +30,8 @@ def main():
     parser.add_argument('--epochs', type=int, default=80, metavar='N',
                         help='number of epochs to train (default: 14)')
     
-    parser.add_argument('--lr', type=float, default=1e-3, metavar='LR',
-                        help='learning rate (default: 1e-3)')
+    parser.add_argument('--lr', type=float, default=1e-4, metavar='LR',
+                        help='learning rate (default: 1e-4)')
 
     parser.add_argument('--SSL_model', type=str, default="facebook/hubert-base-ls960", 
                         help='Huggingface model path')

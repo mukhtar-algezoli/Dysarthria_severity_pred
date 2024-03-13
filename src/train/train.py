@@ -13,6 +13,7 @@ def train_loop(dataloader, model, loss_fn, optimizer, device, wandb=None):
     for batch, (batch_input, batch_labels) in enumerate(dataloader):
       batch_input = torch.squeeze(batch_input, 1)
       pred = model(batch_input.to(device))
+      pred = pred.squeeze()
       loss = loss_fn(pred, batch_labels.to(device))
       loss.backward()
       optimizer.step()
@@ -53,6 +54,7 @@ def val_loop(dataloader, model, loss_fn, device, wandb=None):
         for batch_input, batch_labels in dataloader:
             batch_input = torch.squeeze(batch_input, 1)
             pred = model(batch_input.to(device))
+            pred = pred.squeeze()
             val_loss += loss_fn(pred, batch_labels.to(device)).item()
             # correct += (pred.argmax(1) == batch_labels.to(device)).type(torch.float).sum().item()
 
@@ -99,6 +101,20 @@ def train_model(args, model, train_loader, val_loader, optimizer, loss_fn, devic
     print("Done!")
 
 
+def map_labels(outputs):
+    labels = []
+    for i in outputs:
+        if i < 25:
+            labels.append(1)
+        elif i < 50:
+            labels.append(2)
+        elif i < 75:
+            labels.append(3)
+        else:
+            labels.append(4)
+    return labels
+
+
 def test_model(args, model, test_loader, loss_fn, device, wandb=None):
     model.eval()
     size = len(test_loader.dataset)
@@ -110,22 +126,26 @@ def test_model(args, model, test_loader, loss_fn, device, wandb=None):
         for batch_input, batch_labels in test_loader:
             batch_input = torch.squeeze(batch_input, 1)
             pred = model(batch_input.to(device))
-            tes_loss += loss_fn(pred, batch_labels.to(device)).item()
+            pred = pred.squeeze()
+            test_loss += loss_fn(pred, batch_labels.to(device)).item()
+            pred_labels = torch.Tensor(map_labels(pred))
+            correct_labels = torch.Tensor(map_labels(batch_labels.to(device)))
+            correct += (pred_labels.to(device) == correct_labels.to(device)).type(torch.float).sum().item()
             # correct += (pred.argmax(1) == batch_labels.to(device)).type(torch.float).sum().item()
 
     test_loss /= num_batches
-    # correct /= size
+    correct /= size
 
     correct /= size
 
     if wandb:
         wandb.log({"test loss": test_loss})
-        # wandb.log({"test accuracy": 100*correct})
+        wandb.log({"test accuracy": 100*correct})
 
-    # print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
+    print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
 
     # return test_loss, 100*correct
 
-    print(f"Test Error: Avg loss: {test_loss:>8f} \n")
+    # print(f"Test Error: Avg loss: {test_loss:>8f} \n")
 
     return test_loss

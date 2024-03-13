@@ -12,18 +12,43 @@ class RegressionHead(nn.Module):
         super().__init__()
         # self.linearLayer = nn.Linear(hidden_size, hidden_size)
         # self.out_proj = nn.Linear(hidden_size, 1)
+        # self.seq = nn.Sequential(
+        #       nn.Linear(hidden_size, hidden_size),
+        #       # nn.ReLU(),
+        #       # nn.Linear(hidden_size, hidden_size),
+        #       # nn.ReLU(),
+        #       # nn.Linear(hidden_size, hidden_size),
+        #       # nn.ReLU(),
+        #       # nn.Linear(hidden_size, hidden_size),
+        #       nn.ReLU(),
+        #       nn.Linear(hidden_size, hidden_size),
+        #       nn.ReLU(),
+        #       nn.Linear(hidden_size, 1))
+
         self.seq = nn.Sequential(
+
               nn.Linear(hidden_size, hidden_size),
-              # nn.ReLU(),
-              # nn.Linear(hidden_size, hidden_size),
-              # nn.ReLU(),
-              # nn.Linear(hidden_size, hidden_size),
-              # nn.ReLU(),
-              # nn.Linear(hidden_size, hidden_size),
+
               nn.ReLU(),
               nn.Linear(hidden_size, hidden_size),
               nn.ReLU(),
-              nn.Linear(hidden_size, 1))
+              nn.Linear(hidden_size, hidden_size * 2),
+              nn.ReLU(),
+              nn.Linear(hidden_size * 2, hidden_size * 4),
+              nn.ReLU(),
+              nn.Linear(hidden_size * 4, hidden_size * 2),
+              nn.ReLU(),
+              nn.Linear(hidden_size * 2, hidden_size),
+              nn.ReLU(),
+              nn.Linear(hidden_size, 300),
+              nn.ReLU(),
+
+              nn.Linear(300, 100),
+              nn.ReLU(),
+
+              nn.Linear(100, 10),
+              nn.ReLU(),
+              nn.Linear(10 , 1))
 
         self.dense = nn.Linear(hidden_size, hidden_size)
         self.dropout = nn.Dropout(0.1)
@@ -33,12 +58,12 @@ class RegressionHead(nn.Module):
         x = self.seq(features)
         # return x
 
-        x = features
-        x = self.dropout(x)
-        x = self.dense(x)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
+        # x = features
+        # x = self.dropout(x)
+        # x = self.dense(x)
+        # x = torch.tanh(x)
+        # x = self.dropout(x)
+        # x = self.out_proj(x)
         return x
     
 
