@@ -38,6 +38,7 @@ def train_loop(dataloader, model, loss_fn, optimizer, device, wandb=None):
         # wandb.log({"train accuracy": 100*correct})
 
     # return train_loss, 100*correct
+    print(f"training Error: Avg val loss: {train_loss:>8f} \n")
 
     return train_loss
 
